@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+<br>
+<div class="row">
+    <div class="col-md-10">
+        <h1>お預かり確認</h1>
+    </div>
+    <div class="col-md-2">
+        <p><a href="/main" class="btn btn-primary">もどる</a></p>
+    </div>
+</div>
+<div class="">
+    <form action="/deposit_comp" method="post">
+        <br>
+        <p>
+            お預かり金額：{{ custody }}<br>
+            口座残額：{{ money }}
+        </p>
+        <br>
+        <button type="submit" class="btn btn-primary" name="deposit" value="{{ deposit }}">預ける</button>
+    </form>
+</div>
+{% endblock %}

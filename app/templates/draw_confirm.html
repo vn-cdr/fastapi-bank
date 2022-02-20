@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+<br>
+<div class="row">
+    <div class="col-md-10">
+        <h1>引出し確認</h1>
+    </div>
+    <div class="col-md-2">
+        <p><a href="/main" class="btn btn-primary">もどる</a></p>
+    </div>
+</div>
+<div class="">
+    <form action="/drawer_comp" method="post">
+        <br>
+        <p>
+            引出し金額：{{ draw }}<br>
+            口座残額：{{ money }}
+        </p>
+        <br>
+        <button type="submit" class="btn btn-primary" name="draw" value="{{ draw }}">預ける</button>
+    </form>
+</div>
+{% endblock %}

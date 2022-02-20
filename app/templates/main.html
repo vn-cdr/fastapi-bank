@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+<br>
+<div class="row">
+    <div class="col-md-10">
+        <h1>Welcome to Bank Test application</h1>
+    </div>
+    <div class="col-md-2">
+        <p><a href="/" class="btn btn-primary">もどる</a></p>
+    </div>
+</div>
+
+<div class="topic">
+    <a href="/reference" class="btn btn-primary">口座参照</a>
+    <a href="/deposit" class="btn btn-primary">お預かり</a>
+    <a href="/draw" class="btn btn-primary">お引き出し</a>
+</div>
+<hr>
+<p>This is a Bank Test application powered by <b>FastAPI</b>!</p>
+ 
+{% endblock %}

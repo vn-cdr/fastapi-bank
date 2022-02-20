@@ -1,1 +1,1 @@
-# fastapi-shop
+# fastapi-bank

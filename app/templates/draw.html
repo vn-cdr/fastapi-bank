@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="row">
+    <div class="col-md-10">
+        <h1>引出し</h1>
+    </div>
+    <div class="col-md-2">
+        <p><a href="/main" class="btn btn-primary">もどる</a></p>
+    </div>
+</div>
+<form action="/draw_confirm" method="post">
+    <br>
+    <p>
+        引出し金額：<br>
+        ¥<input name="draw" type="number" value="{{money}}" placeholder="">
+    </p>
+    <br>
+    <button type="submit" class="btn btn-primary">引き出す</button>
+</form>
+{% endblock %}

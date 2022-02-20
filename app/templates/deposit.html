@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="row">
+    <div class="col-md-10">
+        <h1>預かり</h1>
+    </div>
+    <div class="col-md-2">
+        <p><a href="/main" class="btn btn-primary">もどる</a></p>
+    </div>
+</div>
+<form action="/deposit_confirm" method="post">
+    <br>
+    <p>
+        お預かり金額：<br>
+        ¥<input name="deposit" type="number" value="{{money}}" placeholder="">
+    </p>
+    <br>
+    <button type="submit" class="btn btn-primary">預ける</button>
+</form>
+{% endblock %}

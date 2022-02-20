@@ -1,0 +1,31 @@
+.topic{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.contents-tile{
+    box-shadow:
+        0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+        0 5px 6.1px rgba(0, 0, 0, 0.076),
+        0 10.1px 11.4px rgba(0, 0, 0, 0.086),
+        0 19.2px 19.8px rgba(0, 0, 0, 0.092),
+        0 38.4px 34.8px rgba(0, 0, 0, 0.1),
+        0 101px 74px rgba(0, 0, 0, 0.13);
+    /* border: 5px double #333333; */
+    background-color: white;
+    text-align: left;
+    display: flex;
+}
+
+.topic-image img{
+    /* 追加 */
+   width: 100px;
+   height: 100px;
+}
+
+.topic-text{
+    text-align: left;
+    padding-left: 2px;
+	text-indent: 1px;
+}
